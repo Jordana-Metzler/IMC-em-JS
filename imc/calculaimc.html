@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostra(frase) {
+            document.write(frase + "<br>");
+        }
+
+        function calculaIMC(altura, peso){
+            var IMC = peso / (altura * altura);
+            return IMC;
+        }
+
+        var pesoj = 75;
+        var alturaj = 1.75;
+        var meuimc = calculaIMC(alturaj, pesoj)
+        mostra("Meu IMC é: " + meuimc.toFixed(2));
+        mostra("Eu ainda estou " + (meuimc - 18.5).toFixed(2) + " pontos acima do limite da magreza");
+
+    </script>
+</body>
+</html>
