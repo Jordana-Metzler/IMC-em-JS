@@ -16,11 +16,11 @@
             return IMC;
         }
 
-        var pesoj = 75;
-        var alturaj = 1.75;
+        var pesoj = prompt("Qual o seu peso? ");
+        var alturaj = prompt("Informe sua altura");
         var meuimc = calculaIMC(alturaj, pesoj)
-        mostra("Meu IMC é: " + meuimc.toFixed(2));
-        mostra("Eu ainda estou " + (meuimc - 18.5).toFixed(2) + " pontos acima do limite da magreza");
+        mostra("Seu IMC é: " + meuimc.toFixed(2));
+        mostra("Você ainda esta " + (meuimc - 18.5).toFixed(2) + " pontos acima do limite da magreza");
 
     </script>
 </body>
